@@ -36,7 +36,7 @@ public class StudentServiceImpl implements StudentService {
             newStudent.setName(student.getName());
             newStudent.setPercentage(student.getPercentage());
             newStudent.setBranch(student.getBranch());
-            studentRepository.save(newStudent);111111111111111111111111111111111111111111
+            studentRepository.save(newStudent);
         }
         return new ResponseEntity<>(newStudent, (response.isEmpty())?HttpStatus.NOT_FOUND:HttpStatus.OK);
     }
